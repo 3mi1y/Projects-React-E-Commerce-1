@@ -31,8 +31,7 @@ class AddProductContainer extends React.Component {
   onSubmit = (event) => {
     event.preventDefault()
     this.props.domainData.addProduct(this.state)
-    // redirect back to the list of products
-    this.props.history.push('/products')
+      .then(() => this.props.history.push('/products')) // redirect back to products page
   }
 
   onCancel = () => {

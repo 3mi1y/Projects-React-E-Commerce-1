@@ -34,7 +34,7 @@ class EditProductFormContainer extends React.Component {
     event.preventDefault()
     console.log('State in container', this.state)
     this.props.domainData.editProduct(this.state)
-    this.props.history.push('/products')
+      .then(() => this.props.history.push('/products'))
   }
 
   onCancel = () => {

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Slabo+27px');
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Slabo';
+  letter-spacing: 2px;
+  height: 200px;
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border-bottom: 2px solid rgb(255, 153, 168);
+}
+
+.navContainer h1 {
+  padding-top: 2.5%;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  font-size: .7em;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.linksContainerItem {
+  width: calc(25% - 50px); /*this percentage should be updated depending on the number of links*/
+  text-align: center;
+  font-size: 1.2em;
+  color: rgb(52, 49, 53);
+  display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.linksContainerItem a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.linksContainerItem a:hover {
+  text-decoration: none;
+}
+
+.linksContainerItem:after {
+  content: '';
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+  color: #333;
+}
+
+.linksContainerItem:hover:after {
+  width: 100%;
+	background: #333;
+}
+
+.topNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.shoppingBag {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2.5%;
+  padding-left: 5%;
+  font-size: .7em;
+}
+
+.shoppingBag a {
+  color: rgb(255, 153, 168);
+}
+
+.shoppingBag a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.shoppingBag p {
+  color: black;
+}
+
+.shoppingBagItem {
+  padding: 0px;
+  margin: 0px;
+}
+
+.shoppingBagIcon {
+  font-family: FontAwesome;
+  font-size: 20px;
+}
+
+.searchBar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+
+.searchBar p {
+  font-size: 10px;
+}
+
+/*.boxShadow {
+	-webkit-box-shadow: 0 10px 6px -6px rgb(212, 212, 212);
+	   -moz-box-shadow: 0 10px 6px -6px rgb(212, 212, 212);
+	        box-shadow: 0 10px 6px -6px rgb(212, 212, 212);
+}*/
+
+.title {
+  letter-spacing: 7px;
+  font-family: 'Alegreya Sans SC';
+  font-size: 2em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 55px;
+}
+
+input[type="text"] {
+    font-family: FontAwesome;
+    font-size: 10px;
+    color: rgb(54, 51, 51);
+    background-color: rgb(245, 245, 245);
+    border: none;
+    padding: 5px;
+    margin-left: 35px;
+    width: 200px;
+}
