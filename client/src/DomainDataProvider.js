@@ -33,13 +33,21 @@ class DomainDataProvider extends Component {
     ServerApi.editProduct(product)
       .then(this.getAllProducts)
 
+  login = (user) =>
+    ServerApi.login(user)
+
+  signup = (user) =>
+    ServerApi.signup(user)
+
   render () {
     const domainData = {
       isLoaded: this.state.isLoaded,
       products: this.state.products,
       addProduct: this.addProduct,
       deleteProduct: this.deleteProduct,
-      editProduct: this.editProduct
+      editProduct: this.editProduct,
+      login: this.login,
+      signup: this.signup
     }
 
     return (
