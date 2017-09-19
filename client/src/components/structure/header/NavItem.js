@@ -24,7 +24,6 @@ const styles = {
     position: 'relative',
     paddingBottom: '3px',
     textDecoration: 'none',
-    border: '1px dotted red',
     '& a': {
       // display: 'inline-block',
       // position: 'relative',

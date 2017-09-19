@@ -16,7 +16,7 @@ const styles = {
     alignItems: 'center',
     fontFamily: 'Slabo',
     letterSpacing: '2px',
-    height: '200px',
+    height: '150px',
     width: '100%',
     backgroundColor: '#ffffff',
     paddingBottom: '0px',
@@ -37,15 +37,14 @@ const styles = {
     display: 'flex',
     flexDirection: 'row',
     width: '100%',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    paddingBottom: '3%'
   },
   searchBar: {
     width: '25%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '2%',
-    border: '1px dotted red',
     '& p': {
       fontSize: '10px'
     },
@@ -64,11 +63,11 @@ const styles = {
     width: '25%',
     display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'space-around',
     textAlign: 'center',
     paddingTop: '2.5%',
     paddingLeft: '5%',
     fontSize: '.7em',
-    border: '1px dotted red',
     '& a': {
       color: 'rgb(255, 153, 168)',
       '&:hover': {
@@ -77,7 +76,10 @@ const styles = {
       }
     },
     '& p': {
-      color: 'black'
+      color: 'black',
+      padding: '0%',
+      margin: '0%',
+      fontSize: '10px'
     }
   },
   shoppingBagItem: {
@@ -86,22 +88,21 @@ const styles = {
   },
   shoppingBagIcon: {
     color: 'pink',
-    fontSize: '22px',
+    fontSize: '20px',
     '&:hover': {
       color: '#cecece'
     }
   },
   title: {
-    letterSpacing: '7px',
-    fontFamily: 'Alegreya Sans SC',
-    fontSize: '2em',
+    letterSpacing: '10px',
+    fontFamily: 'Slabo',
+    fontSize: '1.2em',
     width: '50%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'flex-end',
-    paddingTop: '55px',
-    border: '1px dotted red'
+    paddingTop: '5%',
+    justifyContent: 'center'
   }
 }
 
