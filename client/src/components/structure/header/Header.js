@@ -1,8 +1,8 @@
 import React from 'react'
 import NavItem from './NavItem'
-import FontAwesome from 'react-fontawesome'
 import injectSheet from 'react-jss'
 import PropTypes from 'prop-types'
+import ShoppingCart from './ShoppingCart'
 
 const propTypes = {
   classes: PropTypes.object.isRequired
@@ -16,7 +16,7 @@ const styles = {
     alignItems: 'center',
     fontFamily: 'Slabo',
     letterSpacing: '2px',
-    height: '150px',
+    height: '200px',
     width: '100%',
     backgroundColor: '#ffffff',
     paddingBottom: '0px',
@@ -59,43 +59,9 @@ const styles = {
       width: '200px'
     }
   },
-  shoppingBag: {
-    width: '25%',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-around',
-    textAlign: 'center',
-    paddingTop: '2.5%',
-    paddingLeft: '5%',
-    fontSize: '.7em',
-    '& a': {
-      color: 'rgb(255, 153, 168)',
-      '&:hover': {
-        textDecoration: 'none',
-        color: 'black'
-      }
-    },
-    '& p': {
-      color: 'black',
-      padding: '0%',
-      margin: '0%',
-      fontSize: '10px'
-    }
-  },
-  shoppingBagItem: {
-    padding: '0px',
-    margin: '0px'
-  },
-  shoppingBagIcon: {
-    color: 'pink',
-    fontSize: '20px',
-    '&:hover': {
-      color: '#cecece'
-    }
-  },
   title: {
-    letterSpacing: '10px',
-    fontFamily: 'Slabo',
+    letterSpacing: '2px',
+    fontFamily: 'Cinzel',
     fontSize: '1.2em',
     width: '50%',
     display: 'flex',
@@ -121,16 +87,10 @@ const Header = ({classes}) => {
           </div>
 
           <div className={classes.title}>
-            Project Cashmere
+            Emilys Cool Website
           </div>
 
-          <div className={classes.shoppingBag}>
-            <div className={classes.shoppingBagIcon}>
-              <FontAwesome name='shopping-bag' />
-            </div>
-            <p>Total Items: </p>
-            <p>Price: </p>
-          </div>
+          <ShoppingCart />
 
         </div>
 

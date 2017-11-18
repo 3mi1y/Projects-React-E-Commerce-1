@@ -19,36 +19,32 @@ const styles = {
     width: 'calc(25% - 50px)',
     textAlign: 'center',
     fontSize: '1.2em',
-    // color: 'rgb(52, 49, 53)',
+    color: 'rgb(52, 49, 53)',
     display: 'inline-block',
     position: 'relative',
     paddingBottom: '3px',
     textDecoration: 'none',
     '& a': {
-      // display: 'inline-block',
-      // position: 'relative',
-      // paddingBottom: '3px',
-      '&:after': {
-        content: '',
-        display: 'block',
-        margin: 'auto',
-        height: '3px',
-        width: '0px',
-        background: 'transparent',
-        transition: [{
-          property: 'width',
-          duration: '.5s'
-        }, {
-          property: 'background-color',
-          duration: '.5s'
-        }]
-      },
+      color: 'black',
+      textAlign: 'center',
+      textDecoration: 'none',
       '&:hover': {
-        '&:after': {
-          width: 'calc(25% - 50px)',
-          background: 'blue'
-        }
+        textDecoration: 'none'
       }
+    },
+    '&:after': {
+      content: '',
+      display: 'block',
+      margin: 'auto',
+      height: '3px',
+      width: '5px',
+      background: 'transparent',
+      transition: 'width .5s ease, background-color .5s ease',
+      color: '#333'
+    },
+    '&:hover, &:after': {
+      width: 'calc(25% - 50px)'
+      //backgroundColor: '#333'
     }
   }
 }
